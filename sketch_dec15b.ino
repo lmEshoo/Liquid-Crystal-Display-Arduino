@@ -1,3 +1,6 @@
+// Lini Mestar
+
+// Libraries
 #include <LiquidCrystal.h>
 
 unsigned  ledRed = 12;
@@ -5,6 +8,7 @@ unsigned ledGreen = 13;
 unsigned counter = -1;  // or int
 unsigned Byte = 33;
 
+//LCD Setup
 LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
 
 void setup(){
@@ -14,9 +18,9 @@ void setup(){
    Serial.begin(9600);        // not sure, but must
    //Serial.println("Hello blah"); 
    outputASCII();
-   lcd.print("hello, world!");
+   lcd.print("Welcome to");
    lcd.setCursor(4,1);
-   lcd.print("& lenny");
+   lcd.print("lmeshoo.net");
 }  //setup
 void loop(){
   counter+=1; 
